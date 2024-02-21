@@ -1,0 +1,8 @@
+There are two Jupiter notebooks in the current folder:
+1. Data-Analysis.ipynb : Containing Exploratory Data Analysis and Data pre-processing
+2. Model-Analysis.ipynb : Containing Comparision of Machine Learning Models
+
+The Data-Analysis.ipynb takes the data from inventory "../data/creditcard.csv" which is of 96MB.
+After pre-processing of data, the data will be saved as CSV file as "../data/updated_creditcard.csv" which is 106MB.
+Since the maximum size of data can be uploaded to Github is 100MB, we cannot upload the final data required to run the "Model-Analysis.ipynb".
+Thus, you need to run the "Data-Analysis.ipynb" first to create the updated dataset. 
