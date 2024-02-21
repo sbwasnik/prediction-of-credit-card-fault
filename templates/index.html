@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction of Credtic Card Fraud</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../static/style/style.css">
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict Credit Card Fraud</h1>
+     <h3> Enter the following values</h3>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="time" placeholder="Enter the Time" required="required" autocomplete="off"/>
+        <input type="text" name="V1" placeholder="V1" required="required" autocomplete="off"/>
+        <input type="text" name="V2" placeholder="V2" required="required" autocomplete="off"/>
+        <input type="text" name="V3" placeholder="V3" required="required" autocomplete="off"/>
+        <input type="text" name="V4" placeholder="V4" required="required" autocomplete="off"/>
+        <input type="text" name="V5" placeholder="V5" required="required" autocomplete="off"/>
+        <input type="text" name="V6" placeholder="V6" required="required" autocomplete="off"/>
+        <input type="text" name="V7" placeholder="V7" required="required" autocomplete="off"/>
+        <input type="text" name="V8" placeholder="V8" required="required" autocomplete="off"/>
+        <input type="text" name="V9" placeholder="V9" required="required" autocomplete="off"/>
+        <input type="text" name="V10" placeholder="V10" required="required" autocomplete="off"/>
+        <input type="text" name="V11" placeholder="V11" required="required" autocomplete="off"/>
+        <input type="text" name="V12" placeholder="V12" required="required" autocomplete="off"/>
+        <input type="text" name="V13" placeholder="V13" required="required" autocomplete="off"/>
+        <input type="text" name="V14" placeholder="V14" required="required" autocomplete="off"/>
+        <input type="text" name="V15" placeholder="V15" required="required" autocomplete="off"/>
+        <input type="text" name="V16" placeholder="V16" required="required" autocomplete="off"/>
+        <input type="text" name="V17" placeholder="V17" required="required" autocomplete="off"/>
+        <input type="text" name="V18" placeholder="V18" required="required" autocomplete="off"/>
+        <input type="text" name="V19" placeholder="V19" required="required" autocomplete="off"/>
+        <input type="text" name="V20" placeholder="V20" required="required" autocomplete="off"/>
+        <input type="text" name="V21" placeholder="V21" required="required" autocomplete="off"/>
+        <input type="text" name="V22" placeholder="V22" required="required" autocomplete="off"/>
+        <input type="text" name="V23" placeholder="V23" required="required" autocomplete="off"/>
+        <input type="text" name="V24" placeholder="V24" required="required" autocomplete="off"/>
+        <input type="text" name="V25" placeholder="V25" required="required" autocomplete="off"/>
+        <input type="text" name="V26" placeholder="V26" required="required" autocomplete="off"/>
+        <input type="text" name="V27" placeholder="V27" required="required" autocomplete="off"/>
+        <input type="text" name="V28" placeholder="V28" required="required" autocomplete="off"/>
+		<input type="text" name="Amount" placeholder="Amount" required="required" autocomplete="off"/>
+
+        <button type="submit" class="btn">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   <p class="prediction-text"> {{ prediction_text }}</p>
+
+ </div>
+
+
+</body>
+</html>
